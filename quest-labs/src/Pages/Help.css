@@ -1,0 +1,9 @@
+.help-page {
+    display: flex;
+    flex-direction: column;
+   overflow-y: auto; /* Enable vertical scrolling */
+   height: 70vh;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+  }
