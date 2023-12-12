@@ -1,0 +1,41 @@
+/* App.css */
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  
+}
+
+.toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+
+.model-box {
+  position: fixed;
+  margin-bottom: 46px;
+  border: 2px solid red;
+  bottom: 60px; /* Adjust as needed */
+  right: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+}

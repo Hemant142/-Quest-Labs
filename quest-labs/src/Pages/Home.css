@@ -1,0 +1,72 @@
+/* HomePage.css */
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+   overflow-y: auto; /* Enable vertical scrolling */
+   height: 70vh;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  
+  .scroll-container {
+    /* Set the height of the container */
+  }
+  .blue-top {
+    background: linear-gradient(to bottom, #0576f0, #fff);
+    height: 70vh;
+  }
+  
+  .content-container {
+    padding: 20px;
+
+  }
+  
+  .page-title {
+    margin-top: 40px; /* Adjust the margin-top as needed */
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .sub-title {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px; /* Adjust the margin-top as needed */
+  }
+  .send-icon{
+    color: blue;
+    margin-left: 90%;
+  }
+  .message-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust the margin-top as needed */
+    font-size: small;
+  border:2px solid red;
+ 
+
+  }
+  
+  .box-text {
+font-weight: bold;
+  }
+  
+  .reply-text {
+    margin-top: 10px; /* Adjust the margin-top as needed */
+  }
+  
+
+
+.card-footer:hover {
+    background-color: #6aaaee;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+  }
+  
+  .heading:hover  {
+    color: blue;
+  }
+  
