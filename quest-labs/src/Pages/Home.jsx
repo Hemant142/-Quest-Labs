@@ -1,9 +1,17 @@
 import React from 'react'
 import "./Home.css"
 import { BiSolidSend } from "react-icons/bi";
-import { Box, Button, ButtonGroup, Card, CardBody, CardFooter, CardHeader, Divider, Heading, Image, Stack, Text } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
+import { Box, Button, ButtonGroup, Card, CardBody, CardFooter, CardHeader, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import { Link, useNavigate } from 'react-router-dom';
+import { CiSearch } from "react-icons/ci";
+import { color } from 'framer-motion';
+
 export default function Home() {
+  const navigate = useNavigate()
+  const handleSearch = () =>{
+navigate("/help")
+  }
   return (
     <div className="home-page blue-top" >
    
@@ -43,18 +51,28 @@ export default function Home() {
 </Card>
     </Box>
 
-    <Box  width={"90%"} margin={"auto"} marginBottom={"20px"}>
+    <Box  width={"90%"} margin={"auto"} marginBottom={"20px"} borderRadius={"10px"} >
     <Card maxW='sm'>
-    <CardHeader>
-      <Heading size='sm'>Search for help</Heading>
+     
+    <CardHeader display={"flex"} justifyContent={"space-between"} alignItems={"center"} background={"#f2f2f2"} _hover={{color:"blue", background:"white"}} borderRadius={"10px"} onClick={handleSearch} padding={"10px"}>
+   
+      <Heading size='sm' >Search for help</Heading>
+      <CiSearch color='blue' width={"90px"} height={"90px"} /> 
     </CardHeader>
+   
     <CardBody>
-      <Text>Send Custom user attributes to Intercom   
+      <Text  _hover={{color:"blue"}} display={"flex"} alignItems={"center"} justifyContent={"space-between"} >Send Custom user attributes to Intercom   <IoIosArrowForward color='blue' />
+</Text> 
+<Text  _hover={{color:"blue"}} marginTop={"8px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"}>Tracking user data in Intercom   <IoIosArrowForward color='blue' />
 </Text>
+<Text  _hover={{color:"blue"}} marginTop={"8px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"}>custimize the pre-made email template   <IoIosArrowForward color='blue' />
+</Text> 
+
+<Text  _hover={{color:"blue"}} marginTop={"8px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"}>Forward your email to your team inbox   <IoIosArrowForward color='blue' />
+</Text> 
+
     </CardBody>
-    <CardFooter>
-      <Button>View here</Button>
-    </CardFooter>
+   
   </Card>
     </Box>
     

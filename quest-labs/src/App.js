@@ -5,6 +5,7 @@ import { RiChatSmileLine } from "react-icons/ri";
 import './App.css'; 
 import Model from './Component/Model';
 import ModelRoutes from './Routes/ModelRoutes';
+import Nav1 from './Component/Nav1';
 
 const App = () => {
   const [isBoxOpen, setIsBoxOpen] = useState(false);
@@ -14,17 +15,22 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <Button className="toggle-button" colorScheme='blue' onClick={toggleBox} borderRadius={"50%"} width={"50px"} height={"50px"}>
-      {isBoxOpen? <IoIosArrowDown />: <RiChatSmileLine />}
-      </Button> 
-      {isBoxOpen && (
-        <div className="model-box">
-        <ModelRoutes/>
-          <Model/>
-        </div>
-      )}
+    <div >
+        <Nav1/>
+        <div className="app-container">
+    
+    <Button className="toggle-button" colorScheme='blue' onClick={toggleBox} borderRadius={"50%"} width={"50px"} height={"50px"}>
+    {isBoxOpen? <IoIosArrowDown />: <RiChatSmileLine />}
+    </Button> 
+    {isBoxOpen && (
+      <div className="model-box">
+      <ModelRoutes/>
+        <Model/>
+      </div>
+    )}
+  </div>
     </div>
+  
   );
 };
 

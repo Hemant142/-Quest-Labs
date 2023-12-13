@@ -53,6 +53,7 @@ export default function Navbar() {
       alignItems={"center"}
       gap={"30px"}
       textAlign={"center"}
+     
     >
       {link.map((ele) => (
         <NavLink
